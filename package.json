@@ -1,6 +1,6 @@
 {
 	"name": "kill-port-process",
-	"version": "1.1.0",
+	"version": "2.1.0",
 	"description": "Easily kill hanging processes on ports - on any platform!",
 	"main": "dist/lib/index.js",
 	"bin": {
@@ -9,6 +9,7 @@
 	"typings": "index.d.ts",
 	"scripts": {
 		"test": "mocha",
+		"pretest": "npm run build",
 		"build": "tsc",
 		"prepublish": "npm run build && npm test",
 		"preversion": "npm run build && npm test",
@@ -19,6 +20,8 @@
 		"kill",
 		"kill process",
 		"port",
+		"kill port",
+		"kill port process",
 		"CLI"
 	],
 	"author": "Daniel Hillmann",
